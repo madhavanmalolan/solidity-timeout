@@ -108,6 +108,9 @@ Though there is a reward for the script that is submitting the transaction. The 
 
 Todo : Can this be made front-run proof? Please hit me up. 
 
+## Join the discussion
+[Ethresearch Thread](https://ethresear.ch/t/solidity-timeout-a-decentralized-marketplace-for-scheduling-solidity-function-calls-for-a-future-date/11787)
+
 ## Supporters
 TBA
 
