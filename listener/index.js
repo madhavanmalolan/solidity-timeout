@@ -16,8 +16,9 @@ const TimeoutContractWithSigner = TimeoutContract.connect(wallet);
 
 
 
-
+console.log("Listening for enqueued functions ...");
 provider.on("block", async (blockNumber) => {
+    console.log("Last block processed : ", blockNumber);
     const response = await axios.post(APIURL, {query : `
     {
         functionEntities(where: {

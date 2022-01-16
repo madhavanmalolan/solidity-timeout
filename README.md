@@ -89,6 +89,7 @@ Run a node that listens for `enqueue`d function calls and executes them to claim
 - `git clone https://github.com/madhavanmalolan/solidity-timeout`
 - `cd solidity-timeout`
 - `yarn`
+- `npx hardhat compile`
 - `node listener/index.js` (preferably on a screen)
 
 
