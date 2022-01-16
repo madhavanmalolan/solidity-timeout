@@ -1,0 +1,26 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Timeout
+    network: rinkeby
+    source:
+      address: "0xc6618ff525Dc8a054957a8650a54f107B82996F9"
+      abi: Timeout
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - CallFunction
+        - Executed
+      abis:
+        - name: Timeout
+          file: Timeout/abis/Timeout.json
+      eventHandlers:
+        - event: CallFunction(uint256,uint256,uint256,uint256)
+          handler: handleCallFunction
+        - event: Executed(uint256)
+          handler: handleExecuted
+      file: Timeout/Timeout.wasm

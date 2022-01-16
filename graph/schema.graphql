@@ -1,0 +1,8 @@
+type FunctionEntity @entity {
+  id: ID!
+  functionId: BigInt!
+  blockStart: BigInt! # uint256
+  blockEnd: BigInt! # uint256
+  value: BigInt!
+  executed: Boolean
+}
