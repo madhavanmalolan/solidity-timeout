@@ -86,10 +86,11 @@ Realistically, the script would execute the transaction only if the gas fees to 
 ## Contributing
 ### Run a execution node
 Run a node that listens for `enqueue`d function calls and executes them to claim the reward (see also caveat)
-- `git clone https://`
+- `git clone https://github.com/madhavanmalolan/solidity-timeout`
 - `cd solidity-timeout`
 - `yarn`
-- `node listener/index.js`
+- `node listener/index.js` (preferably on a screen)
+
 
 ### Making the code better
 This has been hacked together in a couple hours and not audited. I'm definitely not an expert in security and gas optimizations. If you find a flaw or something we can do better, please do submit a PR!
